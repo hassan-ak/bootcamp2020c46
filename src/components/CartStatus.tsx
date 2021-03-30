@@ -1,13 +1,37 @@
+import { navigate } from "gatsby";
 import React from "react";
 import { useShoppingCart } from "use-shopping-cart";
+import "./cartstatus.css";
 
 export const CartStatus = () => {
-  const { totalPrice, cartCount } = useShoppingCart();
+  const { totalPrice, cartCount, clearCart } = useShoppingCart();
   return (
-    <div>
-      <div>cart status</div>
-      <div>Total Price: {totalPrice}</div>
-      <div>Count: {cartCount}</div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div className='statusMargin'>Total Price: {totalPrice}</div>
+      <div className='statusMargin'>Count: {cartCount}</div>
+      <button
+        className='statusMargin'
+        onClick={() => {
+          navigate("/cart");
+        }}
+      >
+        Go To Cart
+      </button>
+      <button
+        className='statusMargin'
+        onClick={() => {
+          clearCart();
+        }}
+      >
+        Clear Cart
+      </button>
     </div>
   );
 };
