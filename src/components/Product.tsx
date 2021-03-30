@@ -1,7 +1,8 @@
 import React from "react";
+import { useShoppingCart } from "use-shopping-cart";
 
 export const Product = ({ product }) => {
-  console.log(product.image);
+  const { addItem } = useShoppingCart();
   return (
     <div
       style={{
@@ -18,7 +19,7 @@ export const Product = ({ product }) => {
       </div>
       <button
         onClick={() => {
-          alert("clciked");
+          addItem(product);
         }}
       >
         Add To Cart
