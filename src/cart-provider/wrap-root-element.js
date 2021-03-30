@@ -11,8 +11,8 @@ export const wrapRootElement = ({ element }) => {
     <CartProvider
       mode='client-only'
       stripe={stripePromise}
-      successUrl='http://localhost:8888/payment-success'
-      cancelUrl='http://localhost:8888/'
+      successUrl='https://hassanalikhan-bc2020c46.netlify.app/payment-success'
+      cancelUrl='https://hassanalikhan-bc2020c46.netlify.app/'
       currency='USD'
     >
       {element}
