@@ -8,3 +8,7 @@
 ### Links
 
 - Video Lectures [Link1](https://www.youtube.com/watch?v=tYGlZI4OPIs&ab_channel=PanacloudServerlessSaaSTraining) [Link2](https://www.facebook.com/zeeshanhanif/videos/10224984117135014/) [Link3](https://www.youtube.com/watch?v=gsfKhhB9_0M&ab_channel=PanacloudServerlessSaaSTraininginUrdu) [Link4](https://www.facebook.com/zeeshanhanif/videos/10224993742615645/)
+
+### Deployment
+
+- [Live Demo](https://hassanalikhan-bc2020c46.netlify.app)
